@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calci</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://kit.fontawesome.com/3c7ff3a41a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1>This is exclusively done for U BRO...!!!!</h1>
+
+<div class="content">
+
+	<div>
+		<input type="text" class="inputs" name="result" placeholder="Come up with Ur cal" >
+	</div>
+
+	
+
+	<div>
+		<button  class=" but" onclick="func(7)">7</button>
+		<button  class=" but" onclick="func(8)">8</button>
+		<button  class=" but" onclick="func(9)">9</button>
+		<button  class=" but oper"  onclick="func('*')"> X</button><br>
+		<button  class=" but" onclick="func(4)">4</button>
+		<button  class=" but" onclick="func(5)">5</button>
+		<button  class=" but" onclick="func(6)">6</button>
+		<button class=" but oper"  onclick="func('-')">-</button><br>
+		<button class=" but"  onclick="func(3)">3</button>
+		<button class=" but"  onclick="func(2)">2</button>
+		<button class=" but"  onclick="func(1)">1</button>
+		<button class=" but oper"  onclick="func('+')">+</button><br>
+		<button class=" but"  onclick="func('.')">.</button>
+		<button  class=" but" onclick="func(0)">0</button>
+		<button  class=" but" onclick="f()">=</button>
+		<button  class=" but oper" onclick="func('/')">/</button><br>
+		<button  class=" but clr" onclick="clearInp(1)">All Clear</button>
+	</div>
+
+</div>
+
+<div>
+	<i class="fa fa-phone" aria-hidden="true"></i>  7386456455 <br>
+	<i class="fa fa-spinner fa-pulse  fa-fw"></i>Waiting for your Call
+</div>
+
+</body>
+
+<script>
+function clearInp(n){
+	document.getElementsByName("result")[0].value="";
+}
+
+function func(n){
+	document.getElementsByName("result")[0].value+=n;
+}
+
+
+function f(){
+	var x=document.getElementsByName("result")[0].value;
+	
+	try{
+		var y=eval(x);
+	}
+	catch(err){
+		var y="";
+		alert("Keep an eye Vivekk..!!!");
+	}
+	document.getElementsByName("result")[0].value=y;
+}
+

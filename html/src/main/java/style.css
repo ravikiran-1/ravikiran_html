@@ -1,0 +1,64 @@
+body{
+	box-sizing: border-box;
+	text-align: center;
+	background: #eeee;
+}
+
+.content{
+	display: inline-block;
+	text-align:left;
+	background: black;
+	margin-bottom: 1px; 
+	border: 2px solid black;
+	margin-top: 20vh;
+}
+
+.but{
+	border:none;
+	margin-right: 0px;
+	width: 4.5em;
+	height:4em;
+	margin-right: 0px;
+	letter-spacing: 1px;
+	margin-bottom: 3px;
+	background: #ffff;
+	color: black;
+
+}
+
+	.clr{
+		width: 100%;
+		background: yellow;
+	}
+
+	.inputs{
+		width: 100%;
+		height: 5em;
+		background: lightgreen;
+		text-align: right;
+		padding: 5%;
+		border: none;
+		border-bottom: 2px solid black;
+	}
+
+.oper{
+	font-size-adjust: 1em;
+	font-weight: bold;
+}
+
+	.oper:active{
+		background: orange;
+		transition-delay: 2s;
+	}
+
+
+	.but:active{
+		background: orange;
+		transition-duration: 2s;
+	}
+
+
+.clr:active{
+	background: green;
+	transition-duration: 2s;
+}
